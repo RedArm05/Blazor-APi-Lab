@@ -1,0 +1,71 @@
+﻿@page "/ai"
+
+@inject ApiAiBlazorLab.Services.AiService AI
+
+
+<h3>AI Chat</h3>
+
+
+<textarea class="form-control" @bind="Prompt" rows="3"
+          placeholder="Ask me anything..."></textarea>
+
+
+<button class="btn btn-success mt-2" @onclick="Send" disabled="@IsBusy">
+
+    @(IsBusy ? "Thinking..." : "Send")
+
+</button>
+
+
+@if (!string.IsNullOrWhiteSpace(Response))
+
+{
+
+    <h5 class="mt-3">Response:</h5>
+
+    <div class="alert alert-secondary">
+
+        @Response
+
+    </div>
+
+}
+
+
+@code {
+
+    private string Prompt = "";
+
+    private string Response = "";
+
+    private bool IsBusy = false;
+
+
+    private async Task Send()
+
+    {
+
+        if (string.IsNullOrWhiteSpace(Prompt))
+
+        {
+
+            Response = "Enter a prompt.";
+
+            return;
+
+        }
+
+
+        IsBusy = true;
+
+        Response = "";
+
+
+        Response = await AI.AskAsync(Prompt);
+
+
+        IsBusy = false;
+
+    }
+
+}

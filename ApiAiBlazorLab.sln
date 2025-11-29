@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36717.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiAiBlazorLab", "ApiAiBlazorLab.csproj", "{93E4D8B8-ED05-4680-B3A4-E09FBA877434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiAiBlazorLab.Tests", "..\ApiAiBlazorLab.Tests\ApiAiBlazorLab.Tests.csproj", "{C6D0EC71-A73C-4B60-9E6A-D937E5355727}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93E4D8B8-ED05-4680-B3A4-E09FBA877434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E4D8B8-ED05-4680-B3A4-E09FBA877434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E4D8B8-ED05-4680-B3A4-E09FBA877434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E4D8B8-ED05-4680-B3A4-E09FBA877434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D0EC71-A73C-4B60-9E6A-D937E5355727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D0EC71-A73C-4B60-9E6A-D937E5355727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D0EC71-A73C-4B60-9E6A-D937E5355727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D0EC71-A73C-4B60-9E6A-D937E5355727}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {650661F8-F793-48DF-89A1-A1B1A95E7F19}
+	EndGlobalSection
+EndGlobal
